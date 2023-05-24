@@ -1,0 +1,30 @@
+h1 {
+  color: rgb(17, 0, 72);
+  text-align: center;
+}
+
+#canvas {
+  border: 1px solid black;
+}
+
+.canvas-container {
+  display: flex;
+  gap: 10%;
+  margin-left: 20%;
+}
+
+.key-des {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.key-des img {
+  width: 45px;
+}
+
+.key-des p {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
