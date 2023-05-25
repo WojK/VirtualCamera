@@ -18,43 +18,46 @@ class Camera {
       if (event.defaultPrevented) {
         return;
       }
-      if (event.code === "ArrowDown") {
-        this.rotatePointsOX(this.angle, this.points3d);
-        this.drawScene();
-      } else if (event.code === "ArrowUp") {
-        this.rotatePointsOX(-this.angle, this.points3d);
-        this.drawScene();
-      } else if (event.code === "ArrowRight") {
-        this.rotatePointsOZ(this.angle, this.points3d);
-        this.drawScene();
-      } else if (event.code === "ArrowLeft") {
-        this.rotatePointsOZ(-this.angle, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyE") {
-        this.translatePoints(0, 0, -this.translationStep, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyA") {
-        this.translatePoints(this.translationStep, 0, 0, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyS") {
-        this.translatePoints(0, this.translationStep, 0, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyD") {
-        this.translatePoints(-this.translationStep, 0, 0, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyW") {
-        this.translatePoints(0, -this.translationStep, 0, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyR") {
-        this.translatePoints(0, 0, this.translationStep, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyZ") {
-        this.zoomF(this.zoom, this.points3d);
-        this.drawScene();
-      } else if (event.code === "KeyX") {
-        this.zoomF(-this.zoom, this.points3d);
-        this.drawScene();
+      switch (event.code) {
+        case "ArrowDown":
+          this.rotatePointsOX(this.angle, this.points3d);
+          break;
+        case "ArrowUp":
+          this.rotatePointsOX(-this.angle, this.points3d);
+          break;
+        case "ArrowRight":
+          this.rotatePointsOZ(this.angle, this.points3d);
+          break;
+        case "ArrowLeft":
+          this.rotatePointsOZ(-this.angle, this.points3d);
+          break;
+        case "KeyE":
+          this.translatePoints(0, 0, -this.translationStep, this.points3d);
+          break;
+        case "KeyA":
+          this.translatePoints(this.translationStep, 0, 0, this.points3d);
+          break;
+        case "KeyS":
+          this.translatePoints(0, this.translationStep, 0, this.points3d);
+          break;
+        case "KeyD":
+          this.translatePoints(-this.translationStep, 0, 0, this.points3d);
+          break;
+        case "KeyW":
+          this.translatePoints(0, -this.translationStep, 0, this.points3d);
+          break;
+        case "KeyR":
+          this.translatePoints(0, 0, this.translationStep, this.points3d);
+          break;
+        case "KeyZ":
+          this.zoomF(this.zoom, this.points3d);
+          break;
+        case "KeyX":
+          this.zoomF(-this.zoom, this.points3d);
+          break;
       }
+      this.drawScene();
+
       event.preventDefault();
     });
   }

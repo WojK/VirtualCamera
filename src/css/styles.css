@@ -1,10 +1,17 @@
+html {
+  font-family: "Roboto";
+  background-color: #f0f8ff;
+}
+
 h1 {
   color: rgb(17, 0, 72);
   text-align: center;
+  font-weight: 400;
 }
 
 #canvas {
   border: 1px solid black;
+  background-color: white;
 }
 
 .canvas-container {
@@ -27,4 +34,34 @@ h1 {
   margin-left: 10px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.btns-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+input {
+  display: none;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  cursor: pointer;
+  border-radius: 10% solid black;
+  padding: 15px 32px;
+  background-color: #008cba;
+  border-radius: 8%;
+}
+#change-mode-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8%;
 }

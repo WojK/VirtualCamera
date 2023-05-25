@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -62,8 +66,12 @@
       </div>
       <canvas id="canvas" width="600" height="600"> </canvas>
     </div>
-    <input type="file" id="inputFile" />
-    <button id="change-mode-btn">Change Mode</button>
+    <div class="btns-container">
+      <label for="inputFile"> Select file </label>
+      <input id="inputFile" type="file" />
+
+      <button id="change-mode-btn">Change Mode</button>
+    </div>
 
     <script type="module" src="./js/app.js"></script>
   </body>
