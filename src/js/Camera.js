@@ -56,9 +56,21 @@ class Camera {
           this.zoomF(-this.zoom, this.points3d);
           break;
       }
+      const imgKey = document.getElementById(event.code);
+      if (imgKey !== null) {
+        imgKey.classList.add("extend-img");
+      }
+
       this.drawScene();
 
       event.preventDefault();
+    });
+
+    window.addEventListener("keyup", (event) => {
+      const imgKey = document.getElementById(event.code);
+      if (imgKey !== null) {
+        imgKey.classList.remove("extend-img");
+      }
     });
   }
 

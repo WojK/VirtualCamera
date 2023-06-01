@@ -7,23 +7,26 @@ h1 {
   color: rgb(17, 0, 72);
   text-align: center;
   font-weight: 400;
+  text-shadow: 0px 1px 2px rgba(66, 68, 90, 1);
+  margin-bottom: 35px;
 }
 
 #canvas {
   border: 1px solid black;
   background-color: white;
+  box-shadow: 0px 15px 10px -15px rgba(66, 68, 90, 1);
 }
 
 .canvas-container {
   display: flex;
-  gap: 10%;
-  margin-left: 20%;
+  justify-content: center;
 }
 
 .key-des {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  margin-right: 50px;
 }
 
 .key-des img {
@@ -37,11 +40,14 @@ h1 {
 }
 
 .btns-container {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-left: 35px;
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
 }
+
 input {
   display: none;
 }
@@ -53,6 +59,8 @@ label {
   padding: 15px 32px;
   background-color: #008cba;
   border-radius: 8%;
+  box-shadow: 0px 20px 15px -11px rgba(66, 68, 90, 1);
+  text-align: center;
 }
 #change-mode-btn {
   background-color: #4caf50;
@@ -64,4 +72,17 @@ label {
   font-size: 16px;
   cursor: pointer;
   border-radius: 8%;
+  box-shadow: 0px 20px 15px -11px rgba(66, 68, 90, 1);
+}
+
+label:hover {
+  transform: scale(1.05);
+}
+
+#change-mode-btn:hover {
+  transform: scale(1.05);
+}
+
+.extend-img {
+  transform: scale(1.15);
 }
