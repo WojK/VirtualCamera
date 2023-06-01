@@ -10,8 +10,8 @@ Objects in the scene are specified in the input file, where the coordinates of p
 
 ## Demo
 
-![ALT TEXT](https://github.com/WojK/VirtualCamera/gifs_readme/virtualcamera1.giv)
-![ALT TEXT](https://github.com/WojK/VirtualCamera/gifs_readme/virtualcamera2.giv)
+![virtualcamera1](https://github.com/WojK/VirtualCamera/assets/106305960/f8b3daed-d535-4ea9-922b-45bbb75acc7c)
+![virtualcamera2](https://github.com/WojK/VirtualCamera/assets/106305960/ced6238c-6e0d-415d-b180-32ad7ae362b3)
 
 ## Run Locally
 
